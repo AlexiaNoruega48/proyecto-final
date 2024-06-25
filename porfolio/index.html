@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi porfolio</title>
+</head>
+
+<body>
+    <!-- Menu principal -->
+    <div class="header-content">
+        <header>
+            <div class="logo">
+                <a href="#">The Teacher</a>
+            </div>
+        
+                <ul>
+                    <li><a href="#inicio"onclick=" seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"onclick=  "seleccionar()" >SOBRE MI</a></li>
+                    <li><a href="#skills" onclick= "seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick=" seleccionar"()>CURRICULUM</a></li>
+                    <li><a href="#porfolio">onclick="seleccionar()">PORFOLIO</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+        
+            <div class="nav-responsive" onclick= "mostrarOcultarMenu()"></div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- Fin del menu principal -->
+    <!-- Seccion de inicio -->
+    <section id="inicio" class="inicio">
+        <div class="banner-content">
+            <div class="img-content">
+                <img src="img/hero.png" alt="Chulazo con sueter que le gusta a Maria,  aaaayyyyyy que rico o´ma!!">
+            </div>
+            <h1>The Teacher</h1>
+            <h2>Profesor - Experto en weberas</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Fin de la Seccion de inicio -->
+    <!-- Seccion Sobre mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="content-section">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy tu Teacher. </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                nostrum tempora, minima tempore inventore sequi? Veritatis dolorum quo facere vitae dolor, aliquam non
+                perferendis soluta?</p>
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            15-03-1984
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            666154565
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            <span>San Benito Bercimuelle, 23</span>
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            tengounm@il.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            <a href="https://cositasvarias.com">https://cositasvarias.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Aficiones -->
+                <div class="col">
+                    <h3>Aficiones</h3>
+                    <div class="aficiones-content">
+                        <div class="aficion">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEOJUEGOS</span>
+                        </div>
+                        <div class="aficion">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <span>BICICLETA</span>
+                        </div>
+                        <div class="aficion">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SENDERISMO</span>
+                        </div>
+                        <div class="aficion">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            <span>INFORMATICA</span>
+                        </div>
+                        <div class="aficion">
+                            <i class="fa-solid fa-plate-wheat"></i>
+                            <span>GASTRONOMIA</span>
+                        </div>
+                        <div class="aficion">
+                            <i class="fa-brands fa-rebel"></i>
+                            <span>BE THE FORCE</span>
+                        </div>
+                        <div class="aficion">
+                            <i class="fa-solid fa-chess-knight"></i>
+                            <span>AJEDREZ</span>
+                        </div>
+                        <div class="aficion">
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            <span>EXPLORACION</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descarga mi CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- Fin de Seccion Sobre mi -->
+    <!-- Sección de Skills -->
+    <section id="skills" class="skills">
+        <div class="content-section">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Skills técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML5 & CSS3</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>UX / UI</span>
+                        <div class="barra-skill">
+                            <div class="progreso uxui">
+                                <span>67%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>84%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>AngularJS</span>
+                        <div class="barra-skill">
+                            <div class="progreso angularjs">
+                                <span>58%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Suite</span>
+                        <div class="barra-skill">
+                            <div class="progreso adobe">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Blender</span>
+                        <div class="barra-skill">
+                            <div class="progreso blender">
+                                <span>72%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SCORM</span>
+                        <div class="barra-skill">
+                            <div class="progreso scorm">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Skills profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso proactividad">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Coordinación de equipos</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipos">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Project Manager</span>
+                        <div class="barra-skill">
+                            <div class="progreso project">
+                                <span>83%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad resolutiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso resolutiva">
+                                <span>93%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin de Sección de Skills -->
+    <section id="curriculum" class="curriculum content-section">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Estudios</h3>
+                <div class="item izq">
+                    <h4>Diseño Grafico</h4>
+                    <span class="ubicacion">Ies Islas Filipinas</span>
+                    <span class="fecha">1997-2000</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam ducimus iste veritatis qui
+                        laboriosam vel, perspiciatis, voluptatibus, error illum in eius eaque possimus odio et quaerat
+                        animi mollitia? Sit explicabo in illo fuga! Sit.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Diseño Grafico</h4>
+                    <span class="ubicacion">Ies Islas Filipinas</span>
+                    <span class="fecha">1997-2000</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam ducimus iste
+                        veritatis qui laboriosam vel, perspiciatis, voluptatibus, error illum in eius eaque
+                        possimus odio et quaerat animi mollitia? Sit explicabo in illo fuga! Sit.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Diseño Grafico</h4>
+                    <span class="ubicacion">Ies Islas Filipinas</span>
+                    <span class="fecha">1997-2000</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam
+                        ducimus iste veritatis qui laboriosam vel, perspiciatis, voluptatibus,
+                        error illum in eius eaque possimus odio et quaerat animi mollitia? Sit
+                        explicabo in illo fuga! Sit.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Diseño Grafico</h4>
+                    <span class="ubicacion">Ies Islas Filipinas</span>
+                    <span class="fecha">1997-2000</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ullam veniam ducimus iste veritatis qui laboriosam vel,
+                        perspiciatis, voluptatibus, error illum in eius eaque
+                        possimus odio et quaerat animi mollitia? Sit explicabo in
+                        illo fuga! Sit.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col derecha">
+                <h3>Estudios</h3>
+                <div class="item der">
+                    <h4>Diseño Grafico</h4>
+                    <span class="ubicacion">Ies Islas Filipinas</span>
+                    <span class="fecha">1997-2000</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam ducimus iste veritatis qui
+                        laboriosam vel, perspiciatis, voluptatibus, error illum in eius eaque possimus odio et quaerat
+                        animi mollitia? Sit explicabo in illo fuga! Sit.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Diseño Grafico</h4>
+                    <span class="ubicacion">Ies Islas Filipinas</span>
+                    <span class="fecha">1997-2000</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam ducimus iste
+                        veritatis qui laboriosam vel, perspiciatis, voluptatibus, error illum in eius eaque
+                        possimus odio et quaerat animi mollitia? Sit explicabo in illo fuga! Sit.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Diseño Grafico</h4>
+                    <span class="ubicacion">Ies Islas Filipinas</span>
+                    <span class="fecha">1997-2000</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam
+                        ducimus iste veritatis qui laboriosam vel, perspiciatis, voluptatibus,
+                        error illum in eius eaque possimus odio et quaerat animi mollitia? Sit
+                        explicabo in illo fuga! Sit.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Diseño Grafico</h4>
+                    <span class="ubicacion">Ies Islas Filipinas</span>
+                    <span class="fecha">1997-2000</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ullam veniam ducimus iste veritatis qui laboriosam vel,
+                        perspiciatis, voluptatibus, error illum in eius eaque
+                        possimus odio et quaerat animi mollitia? Sit explicabo in
+                        illo fuga! Sit.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fin de la seccion del curriculum-->
+    <!-- Seccion porfolio -->
+    <section id="porfolio" class="porfolio">
+        <div class="content-section">
+            <h2>PORFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="Paisajes">
+                    <div class="ovelay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="Paisajes">
+                    <div class="ovelay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/p3.jpg" alt="Paisajes">
+                        <div class="ovelay">
+                            <h3>Diseño creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                    <div class="galeria">
+                        <div class="proyecto">
+                            <img src="img/p4.jpg" alt="Paisajes">
+                            <div class="ovelay">
+                                <h3>Diseño creativo</h3>
+                                <p>Fotografia</p>
+                            </div>
+                        </div>
+                        <div class="galeria">
+                            <div class="proyecto">
+                                <img src="img/p5.jpg" alt="Paisajes">
+                                <div class="ovelay">
+                                    <h3>Diseño creativo</h3>
+                                    <p>Fotografia</p>
+                                </div>
+                            </div>
+                            <div class="galeria">
+                                <div class="proyecto">
+                                    <img src="img/p6.jpg" alt="Paisajes">
+                                    <div class="ovelay">
+                                        <h3>Diseño creativo</h3>
+                                        <p>Fotografia</p>
+                                    </div>
+                                </div>
+                            </div>
+    </section>
+    <!-- Fin de la Seccion porfolio -->
+    <!--Seccion Contacto-->
+    <section id="contacto " class="contacto">
+        <div class="content-section">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Ingresa tu nombre">
+                    
+                    <input type="text" placeholder="Telefono">
+                    <input type="text" placeholder= "correo electronico"> 
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30s" rows="10" placeholder="Mensaje"></textarea>
+                    <button>Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                    <span class="overlay"></span>
+                </div>
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="mapa">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Calle Rue 13 del percebe
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono: 6554789654                            
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: Tengo@email.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>                
+                <!---->
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <a href=  "#inicio" class= "arriba"></a>
+    <i class="fa-solid fa-angle-up"></i>
+    <div class="redes"></div>
+    
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+    <!-- Javascript -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
